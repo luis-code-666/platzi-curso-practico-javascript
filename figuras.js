@@ -88,4 +88,5 @@ function areaCirculo(radio){
     return ( radio * radio ) * PI;
 }
 
+
 console.groupEnd();
