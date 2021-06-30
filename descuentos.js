@@ -14,6 +14,19 @@ function calcularPrecioConDescuento(precio, descuento){
 
 }
 
+function onClickButtonPriceDiscount(){
+    const inputPrice = document.getElementById("InputPrice");
+    const priceValue = inputPrice.value;
+
+    const inputDiscount = document.getElementById("InputDiscount");
+    const discountValue = inputDiscount.value;
+
+    const precioConDescuentos = calcularPrecioConDescuento(priceValue,discountValue)
+
+    const resulP = document.getElementById("ResultP");
+    // innerText sirve para escrivir el html desde java escrip desde un botonn
+    resulP.innerText = "El precio con descuento son: $" + precioConDescuentos;
+}
 // console.log({
 //     descuento,
 //     porcentajeDelPrecioConDescuento,
