@@ -127,7 +127,7 @@ function calcularPerimetroTriangulo(){
 
     const perimetroDelTriangulo = perimetroTriangulo(value1, value2, valueBase);
     alert(perimetroDelTriangulo);
-    
+
     }
 
 function calcularAreaTriangulo(){
@@ -156,3 +156,32 @@ function calcularAreaCirculo(){
     const areaDelCirculo = areaCirculo(radio);
     alert(areaDelCirculo);
 }
+
+
+// ejercicio debes crear una función para calcular la altura de un triángulo isósceles.
+
+function trianguloIsoseles(lado1,lado2,lado3){
+    if (lado1!=lado2 ) {
+        alert("no es un isoseles");
+
+    }else{
+        alert('Es isoceles')
+        return Math.sqrt((lado1**2)-((lado3**2)/4))
+    }
+
+}
+
+function calcularLaAltura(){
+    const inputDeLadoA = document.getElementById("inputLadoA")
+    const ladoA = inputDeLadoA.value;
+    const inputDeLadoB= document.getElementById("inputLadoB")
+    const ladoB = inputDeLadoB.value;
+    const inputDeLadoC = document.getElementById("inputLadoC")
+    const ladoC = inputDeLadoC.value;
+    const muestraAltura = trianguloIsoseles(ladoA,ladoB,ladoC);
+    alert(muestraAltura);
+}
+
+// function calcularPerimetroTriangulo(){
+
+// }
