@@ -26,22 +26,22 @@ function siEsPas(numero){
     
 function calcularMediana(lista) {
     //ordena el sort array y lo hace mas simple
-    let listaOrtdenada = lista.sort(
+    let listaOrdenada = lista.sort(
         function(a,b){
             return a - b;
         }
     )
-    const medianaLista = parseInt( listaOrtdenada.length/2);
+    const medianaLista = parseInt( listaOrdenada.length/2);
         
     let mediana;
-    if (siEsPas(listaOrtdenada.length)) {
-        const elemento1 = listaOrtdenada[medianaLista-1];
-        const elemento2 = listaOrtdenada[medianaLista];
+    if (siEsPas(listaOrdenada.length)) {
+        const elemento1 = listaOrdenada[medianaLista-1];
+        const elemento2 = listaOrdenada[medianaLista];
     
         mediana = calcularMediaAritmetica([elemento1, elemento2]);
         return mediana;
     } else {
-        mediana = listaOrtdenada[medianaLista];
+        mediana = listaOrdenada[medianaLista];
         return mediana;
     }
 }
