@@ -16,3 +16,9 @@
 - Segundo paso: Implementar las formulas en javascript
 - tercer paso: crear funciones 
 - Cuarto pas: integrar o interactuar javascrip en html
+## Taller #3: promedio, nmediana  y moda 
+
+- Primer paso: definir la fòrmula
+- Segundo paso: Implementar las formulas en javascript
+- tercer paso: crear funciones 
+- Cuarto pas: integrar o interactuar javascrip en html
