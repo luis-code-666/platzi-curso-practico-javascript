@@ -19,25 +19,37 @@
 []
 {}
 function calculadoraPromedioPonderado(notes) {
-    const notesWithCredit = notes.map(function (noteObject) {
-        return noteObject.note * noteObject.credit;
+    const multiplicacionDeNotasConCreditos = notes.map(function (multiplicacion) {
+        return multiplicacion.note * multiplicacion.credit;
     });
-    const sumOfNotesWithCredit = notesWithCredit.reduce(
-        function (sum = 0, newVal) {
-            return sum + newVal;
+    const sumaMultiplicacionDeNotasConCreditos = multiplicacionDeNotasConCreditos.reduce(
+        function (suma = 0, nuevoElemento) {
+            return suma + nuevoElemento;
         }
     );
-    const credits = notes.map(function (noteObject) {
-        return noteObject.credit;
+    const creditos = notes.map(function (multiplicacion) {
+        return multiplicacion.credit;
     });
     
-    const sumOfCredits = credits.reduce(
-        function (sum = 0, newVal) {
-            return sum + newVal;
+    const creditoSuma = creditos.reduce(
+        function (suma = 0, nuevoElemento) {
+            return suma + nuevoElemento;
         }
     );
     
-    const promedioPonderadoNotasConCreditos = sumOfNotesWithCredit / sumOfCredits;
-    return promedioPonderadoNotasConCreditos;
+    const resultadoPromedioPonderado = sumaMultiplicacionDeNotasConCreditos / creditoSuma;
+    return resultadoPromedioPonderado;
     
 }
+
+// function calculoMediaArmonica(lista) {
+//     const divisionDelista = lista.map(function (numObjeto) {
+//         return 1/numObjeto.numero;
+//     })
+// console.log(divisionDelista);
+//     const sumaDivisionDelista = divisionDelista.reduce(function (a=0,b) {
+//         return a+b;
+//     })
+//      const resultado = lista.length/sumaDivisionDelista;
+//      return resultado;
+// }
